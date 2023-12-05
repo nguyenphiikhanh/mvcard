@@ -36,14 +36,14 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar
+    <v-app-bar class="mb-3"
         :clipped-left="$vuetify.breakpoint.lgAndUp"
         app
-        color="white"
+        color="darken-1"
         elevate-on-scroll
         flat
     >
-      <v-container :class="{ 'px-0': !$vuetify.breakpoint.smAndUp }">
+      <v-container :class="{ 'px-2': !$vuetify.breakpoint.smAndUp }">
         <v-row
             :no-gutters="!$vuetify.breakpoint.smAndUp"
             align="center"
@@ -109,7 +109,7 @@ export default {
         text: "Free Download",
         href: "https://github.com/AGDholo/giraffe",
         target: "_black",
-        color: "primary",
+        color: "secondary",
         icon: "mdi-download",
       },
     ],
@@ -129,10 +129,6 @@ export default {
       {
         title: "Authors",
         to: "/authors",
-      },
-      {
-        title: "Login",
-        to: "/login",
       },
     ],
   }),

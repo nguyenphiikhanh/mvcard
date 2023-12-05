@@ -84,21 +84,5 @@
         </v-col>
       </v-row>
     </div>
-
-    <div class="pt-4">
-      <h3 class="text-h5 font-weight-medium pb-4">Newsletter</h3>
-
-      <v-divider></v-divider>
-
-      <v-text-field
-        label="Your email adress"
-        solo
-        type="email"
-        outlined
-        flat
-        class="pt-4"
-      ></v-text-field>
-      <v-btn color="accent" block large>Subscrbe</v-btn>
-    </div>
   </div>
 </template>
