@@ -25,10 +25,16 @@ const routes = [
         name: 'Authors',
         component: () => import("@/views/Authors.vue"),
     },
+    {
+        path: '/*', //page not found
+        name: 'NotFound',
+        component: () => import("@/components/NotFound.vue"),
+    }
 ]
 
 const router = new VueRouter({
     routes,
+    mode: "history",
     scrollBehavior() {
         document.getElementById('app').scrollIntoView();
     }

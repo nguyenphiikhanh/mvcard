@@ -2,37 +2,31 @@
   <div>
     <div>
       <h3 class="text-h5 font-weight-medium pb-4">Popular Posts</h3>
-
       <v-divider></v-divider>
-
       <div>
         <v-row v-for="i in 5" :key="i" class="py-2">
           <v-col cols="12" md="6" lg="5">
-            <v-card height="100%" flat>
+            <v-card color="primary" :elevation="0"
+                    flat height="100%" flat to="/detail">
               <v-img
                 src="https://cdn.pixabay.com/photo/2021/01/22/16/55/camera-5940588_1280.jpg"
                 :aspect-ratio="16 / 9"
-                height="100%"
-              ></v-img>
+                height="100%">
+                  <v-card-text>
+                      <v-btn color="accent" to="category"><span class="text-sm">TIPS</span></v-btn>
+                  </v-card-text>
+              </v-img>
             </v-card>
           </v-col>
 
           <v-col>
-            <div>
-              <v-btn depressed color="accent" small>TRAVEL</v-btn>
-
-              <h3 class="text-h6 font-weight-bold primary--text py-3">
-                What do | need to know to start learning JavaScript?
-              </h3>
-
-              <div class="d-flex align-center">
-                <v-avatar color="accent" size="24">
-                  <v-icon dark small>mdi-feather</v-icon>
-                </v-avatar>
-
-                <div class="pl-2">Yan Lee · 03 Jan 2019</div>
-              </div>
-            </div>
+            <v-card-text>
+                <v-hover v-slot:default="{hover}" close-delay="50" open-delay="50">
+                    <a href="/" :class="['text-h6 font-weight-bold py-3 text-center text-md-left', hover ? 'accent--text' : ' white--text']">
+                        What do | need to know to start learning JavaScript?
+                    </a>
+                </v-hover>
+            </v-card-text>
           </v-col>
         </v-row>
       </div>
@@ -55,25 +49,6 @@
     </div>
 
     <div class="pt-4">
-      <h3 class="text-h5 font-weight-medium pb-4">Top Authors</h3>
-
-      <v-divider></v-divider>
-
-      <div class="pt-4">
-        <div class="d-flex align-center mb-6" v-for="i in 5" :key="i">
-          <v-avatar color="accent" size="64">
-            <v-icon dark x-large>mdi-feather</v-icon>
-          </v-avatar>
-
-          <div class="pl-2">
-            <div class="text-h6">Yan Lee</div>
-            <div class="text-subtitle-1">47 Articles</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="pt-4">
       <h3 class="text-h5 font-weight-medium pb-4">Tags</h3>
 
       <v-divider></v-divider>
@@ -86,3 +61,5 @@
     </div>
   </div>
 </template>
+<script>
+</script>
