@@ -40,9 +40,7 @@
             <v-toolbar-title
                 class="font-weight-bold text-h5 secondary--text"
                 style="cursor: pointer"
-                @click="$router.push('/')">
-              <v-icon color="accent" large>mdi-feather</v-icon> Hero
-              <span class="accent--text">UI</span>
+                @click="$router.push('/')">MV<span class="accent--text">CARD</span>
             </v-toolbar-title>
           </v-col>
 

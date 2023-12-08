@@ -1,10 +1,11 @@
 <template>
-  <div class="px-md-20 px-4">
+  <div class="px-md-20 px-0">
     <v-row>
       <v-col cols="12" lg="12" xl="12">
-          <div class="pt-4">
+          <div class="pt-2 pt-md-4">
+            <div class="text-h5 font-weight-bold mb-1">New Post</div>
             <v-row>
-              <v-col v-for="i in 16" :key="i" cols="6" lg="3" md="4" sm="6">
+              <v-col class="px-1" v-for="i in 16" :key="i" cols="6" lg="2" md="4" sm="6">
                   <div>
                     <v-card
                         color="primary"
@@ -12,21 +13,21 @@
                         flat
                         to="/detail">
                       <v-img
-                          :aspect-ratio="16 / 9"
+                          :aspect-ratio="16 / 3"
                           class="elevation-2"
                           gradient="to top, rgba(25,32,72,.4), rgba(25,32,72,.0)"
                           height="200px"
                           src="https://cdn.pixabay.com/photo/2020/12/23/14/41/forest-5855196_1280.jpg"
-                          style="border-radius: 16px">
-                        <v-card-text>
-                          <v-btn color="accent" to="category">TIPS</v-btn>
-                        </v-card-text>
+                          style="border-radius: 12px">
+<!--                        <v-card-text>-->
+<!--                          <v-btn color="accent" to="category">TIPS</v-btn>-->
+<!--                        </v-card-text>-->
                       </v-img>
 
                       <v-card-text>
                         <v-hover v-slot:default="{hover}" close-delay="50" open-delay="50">
-                            <div :class="['text-h6 font-weight-bold text-center', hover ? 'accent--text' : ' white--text']">
-                                How to write an awesome blog post in 5 steps
+                            <div :class="['font-weight-bold text-center', hover ? 'accent--text' : ' white--text']">
+                                How to custom video card How to custom video card
                             </div>
                         </v-hover>
                       </v-card-text>
