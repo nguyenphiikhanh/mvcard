@@ -28,7 +28,7 @@
         color="darken-1"
         elevate-on-scroll
         flat>
-      <v-container :class="{ 'px-2': !$vuetify.breakpoint.smAndUp }">
+      <v-container :class="{ 'px-0': !$vuetify.breakpoint.smAndUp }">
         <v-row
             :no-gutters="!$vuetify.breakpoint.smAndUp"
             align="center"

@@ -1,10 +1,10 @@
 <template>
-  <div class="px-md-20 px-8">
+  <div class="px-md-20 px-4">
     <v-row>
       <v-col cols="12" lg="12" xl="12">
           <div class="pt-4">
             <v-row>
-              <v-col v-for="i in 16" :key="i" cols="12" lg="3" md="6">
+              <v-col v-for="i in 16" :key="i" cols="6" lg="3" md="4" sm="6">
                   <div>
                     <v-card
                         color="primary"
